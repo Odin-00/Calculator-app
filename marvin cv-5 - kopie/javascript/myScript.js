@@ -37,7 +37,7 @@ btn.map(button => {
             case '=':
 
                 try {
-                    display.innerText = eval(display.innerText.replace("x", "*").replace(",", "."));
+                    display.innerText = eval(display.innerText.replaceAll("x", "*").replaceAll(",", "."));
                 } catch {
                     display.innerText = 'Error'
                 }
